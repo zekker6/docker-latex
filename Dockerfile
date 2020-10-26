@@ -10,7 +10,6 @@ RUN apt-get clean all && apt-get update && apt-get install -y \
     pandoc \
     latex2rtf \
     wget \
-    scalable-cyrfonts-tex \
     && rm -rf /var/lib/apt/lists/*
 
 ARG USER_NAME=latex
