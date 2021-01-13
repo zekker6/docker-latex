@@ -12,6 +12,10 @@ RUN apt-get clean all && apt-get update && apt-get install -y \
     wget \
     && rm -rf /var/lib/apt/lists/*
 
+COPY scalable-cyrfonts-tex-shurph_4.16_all.deb /
+RUN apt install -y /scalable-cyrfonts-tex-shurph_4.16_all.deb
+
+
 ARG USER_NAME=latex
 ARG USER_HOME=/home/latex
 ARG USER_ID=1000
